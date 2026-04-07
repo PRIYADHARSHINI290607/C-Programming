@@ -1,0 +1,22 @@
+//Electricity bill Calculator
+#include<stdio.h>
+int main()
+{
+    int unit;
+    float total;
+    scanf("%d",&unit);
+    if(unit<=100)
+    total=unit*2;
+    else if(unit>100 && unit <200)
+    total=(100*2)+(unit-100)*3.5;
+    else if(unit>=200 && unit <400)
+    total=(100*2)+(100*3.5)+(unit-200)*5;
+    else if(unit >=400)
+    total=(100*2)+(100*3.5)+(200*5)+(unit-400)*6;
+
+    if(total >2000)
+    total=total+(total*0.1);
+
+    printf("%.2f",total);
+    return 0;
+}
