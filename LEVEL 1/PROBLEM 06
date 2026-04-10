@@ -1,0 +1,21 @@
+//Vowel or Consonat Checker using Switch case
+#include<stdio.h>
+int main()
+{
+    char v;
+    scanf("%c",&v);
+    switch(v)
+    {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        printf("Vowel");
+        break;
+        default:
+        printf("Consonant");
+    }
+    return 0;
+
+}
