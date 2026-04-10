@@ -1,0 +1,17 @@
+//ATM Withdrawal validator
+#include<stdio.h>
+int main()
+{
+    int b,w;
+    scanf("%d%d",&b,&w);
+    if(w%100==0)
+    {
+        if(b>w)
+        printf("Transaction Successful");
+        else
+        printf("Invalid Transaction");
+    }
+    else
+    printf("Invalid Transaction");
+    return 0;
+}
