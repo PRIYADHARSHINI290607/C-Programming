@@ -1,0 +1,16 @@
+//character case identifier
+#include <stdio.h>
+int main()
+{
+    char m;
+    scanf("%c",&m);
+    if(m>='a' && m<='z')
+    printf("Lowercase");
+    else if(m>='A' && m<='Z')
+    printf("Uppercase");
+    else if(m>='0' && m<='9')
+    printf("Digit");
+    else
+    printf("Special Character");
+    return 0;
+}
